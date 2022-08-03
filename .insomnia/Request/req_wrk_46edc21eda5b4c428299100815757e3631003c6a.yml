@@ -1,0 +1,21 @@
+_id: req_wrk_46edc21eda5b4c428299100815757e3631003c6a
+type: Request
+parentId: wrk_46edc21eda5b4c428299100815757e36
+modified: 1659540202674
+created: 1659540202674
+url: "{{ base_url }}/users"
+name: return all users
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1659540202674
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

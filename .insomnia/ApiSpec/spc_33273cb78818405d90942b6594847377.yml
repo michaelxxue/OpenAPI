@@ -1,0 +1,59 @@
+_id: spc_33273cb78818405d90942b6594847377
+type: ApiSpec
+parentId: wrk_46edc21eda5b4c428299100815757e36
+modified: 1659549739279
+created: 1659409754578
+fileName: New Document
+contents: |
+  openapi: 3.0.1
+  info:
+    title: MyAPI
+    version: '''1.0'''
+    description: some api for ...
+    termsOfService: https://www.example.com/tos
+    contact:
+      email: info@example.com
+      name: example
+      url: https://www.example.com
+    license:
+      name: License
+      url: https://www.example.com
+  paths:
+    /users:
+      get:
+        summary: return all users
+        description: fetch all users from the database
+        operationId: fetchUsers
+        responses:
+          2XX:
+            description: successful query
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/FullUser'
+          default:
+            description: Default error sample response
+  servers:
+    - url: https://my-json-server.typicode.com/bearc0025/api/
+      variables: {}
+      description: My fake server at github
+    - url: https://github.com/bearc0025/api/blob/main/db.json
+      variables: {}
+  components:
+    schemas:
+      FullUser:
+        type: object
+        properties:
+          id:
+            type: string
+            example: "qwerty"
+          username:
+            type: string
+            example: "bear"
+          score:
+            type: integer
+            example: 55
+          active:
+            type: boolean
+            example: true
+contentType: yaml
